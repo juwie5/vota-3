@@ -55,8 +55,8 @@ body{
     font-size: 20px;
     line-height: 24px;
     color: #0C1825;
-    margin-top: 5%;
-    padding: 10% 0;
+    /* margin-top: 5%; */
+    padding: 8% 0;
     width: 100%;
     text-align: center;
 }
@@ -71,5 +71,33 @@ body{
 }
 
 .content{
-    margin-left: 300px;
+    margin: 1.2% 0 0 20%;
+    width: 100%;
+}
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user div{
+    margin-left: 10px;
+}
+
+.user-1{
+        display: flex;
+        align-items: flex-start;
+}
+.user-1 img{
+    margin: 0 5px;
 }
