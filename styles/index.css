@@ -79,7 +79,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 95%;
+    width: 97%;
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 5px 15px;
@@ -101,3 +101,167 @@ body{
 .user-1 img{
     margin: 0 5px;
 }
+
+.user-info h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #777483;
+}
+
+.user-info p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #777483;
+    text-align: right;
+}
+
+.card-set{
+    display: grid;
+     row-gap: 50px; 
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 280px;
+    height: 250px;
+    background-color: #FFFFFF; 
+    border-radius: 15px;
+    text-align: center;
+    padding: auto 0;
+}
+
+.card img{
+    margin-top: 45px;
+}
+
+.card h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39.06px;
+    line-height: 48px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.card p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #8D8A99;
+}
+
+table{
+    width: 97%;
+    margin: 5% 0;
+    border-spacing: 0px;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 4px rgba(238, 238, 238, 0.55);
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+th{
+        text-align: left;
+        height: 2rem;
+        border-bottom: 1px solid rgba(141, 138, 153, 0.5);
+        padding: 10px;      
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #0C1825;
+
+}
+
+tr{
+    vertical-align: middle; 
+    border-top: 1px solid #8D8A99;  
+    padding: 30px 0;
+}
+
+tr:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+td{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0C1825;
+    padding: 10px;
+}
+
+
+.tab-head{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 24px;
+    color: #636363;
+    padding: 30px 0 30px 10px;
+}
+
+.tab-input{
+    position: relative;
+}
+.inp-img{
+    position: absolute;
+    left: 20px;
+    top: 33px;
+}
+
+.tab-input input{
+    padding: 10px 35px;
+    width: 271px;  
+    border: 1px solid #D8D8D8;
+    border-radius: 8px; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color:rgba(141, 138, 153, 0.5);
+}
+
+.th-inp{
+    width: 106px;
+    padding: 10px;
+    border: 1px solid #8D8A99;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8D8A99;
+    background-color: transparent;
+}
+
+
+#green{
+    border: 1px solid #00AA37;
+    color: #00AA37;
+}
+
+.top{
+    border-top: 1px solid rgba(141, 138, 153, 0.5);  
+}
+
+
+
