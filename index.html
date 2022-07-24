@@ -23,11 +23,21 @@
                 <li class="selected"><img src="Assets/dashboard.svg" alt="">Dashboard</li>
                 <li><img src="Assets/user.svg" alt="">Organisations</li>
                 <li><img src="Assets/packages.svg" alt="">Packages</li>
-                <li><img src="Assets/monitor.svg" alt="">Monitoring</li>
-                <li><img src="Assets/payment.svg" alt="">Payments</li>
+                <li><img src="Assets/monitor.svg" alt="">Monitoring <img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown()">
+                    <li id="nested"><img src="Assets/monitoring.svg" alt="">Vote Monitoring</li>
+                    <li id="nested"><img src="Assets/jobs.svg" alt="">Jobs</li>
+                </li>
+                <li><img src="Assets/payment.svg" alt="">Payments  <img class="move-right" src="Assets/left-arrow.svg">
+                    <li id="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</li>
+                    <li id="nested"><img src="Assets/jobs.svg" alt="">Payment History</li>
+                </li>
                 <li><img src="Assets/users.svg" alt="">Freebies</li>
                 <li><img src="Assets/settings.svg" alt="">Configuration</li>
-                <li><img src="Assets/audit.svg" alt="">Audit Log</li>
+                <li><img src="Assets/audit.svg" alt="">Audit Log  <img class="move-right" src="Assets/left-arrow.svg">
+                    <li id="nested"><img src="Assets/sms-log.svg" alt="">Sms Log</li>
+                    <li id="nested"><img src="Assets/email-log.svg" alt="">Email Log</li>
+                    <li id="nested"><img src="Assets/jobs.svg" alt="">System Log</li>
+                </li>
             </ul>
         </nav>
         <section class="content">
@@ -140,8 +150,11 @@
                     </tr>
                 </table>
             </section>
+            <section>
 
+            </section>
         </section>
     </section> 
+    <script src="app.js"></script>
 </body>
 </html>

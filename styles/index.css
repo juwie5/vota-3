@@ -20,6 +20,8 @@ body{
     top: 0;
     background-color: #FFFFFF;
     height: 100vh;  
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 .nav ul {
@@ -55,10 +57,10 @@ body{
     font-size: 20px;
     line-height: 24px;
     color: #0C1825;
-    /* margin-top: 5%; */
-    padding: 8% 0;
+    padding: 8% 0 8% 15%;
     width: 100%;
     text-align: center;
+    display: flex;
 }
 
 .second-li img{
@@ -66,9 +68,16 @@ body{
     margin-right: 15px;
 }
 
+
 .selected{
     background-color:  #F0F0F0;  
 }
+
+#nested{
+    margin-left: 15%; 
+    display: none;
+}
+
 
 .content{
     margin: 1.2% 0 0 20%;
@@ -263,5 +272,7 @@ td{
     border-top: 1px solid rgba(141, 138, 153, 0.5);  
 }
 
-
+.move-right{
+    margin-left: 20px;
+}
 
