@@ -1,3 +1,3 @@
 function showDropdown() {
-  console.log(document.querySelector("#nested"))
+  forEach((document.getElementById("nested")) =>{classList.toggle("show")});
 }

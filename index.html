@@ -20,23 +20,25 @@
                 <li class="first-li"><img src="Assets/Vota Logo.svg" alt="">VOTA WEB</li>
             </ul>
             <ul class="second-li">    
-                <li class="selected"><img src="Assets/dashboard.svg" alt="">Dashboard</li>
-                <li><img src="Assets/user.svg" alt="">Organisations</li>
+                <li class="selected"><img src="Assets/dashboard.svg" alt=""><a href="index.html">Dashboard</a></li>
+                <li><img src="Assets/user.svg" alt=""><a href="Organization.html">Organisations</a></li>
                 <li><img src="Assets/packages.svg" alt="">Packages</li>
-                <li><img src="Assets/monitor.svg" alt="">Monitoring <img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown()">
-                    <li id="nested"><img src="Assets/monitoring.svg" alt="">Vote Monitoring</li>
-                    <li id="nested"><img src="Assets/jobs.svg" alt="">Jobs</li>
+                <li><img src="Assets/monitor.svg" alt="">Monitoring <img id="monitor" class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown()">
+                
+                        <li class="nested"><img src="Assets/monitoring.svg" alt="">Vote Monitoring</li>
+                        <li class="nested"><img src="Assets/jobs.svg" alt="">Jobs</li>
+                   
                 </li>
                 <li><img src="Assets/payment.svg" alt="">Payments  <img class="move-right" src="Assets/left-arrow.svg">
-                    <li id="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</li>
-                    <li id="nested"><img src="Assets/jobs.svg" alt="">Payment History</li>
+                    <li class="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</li>
+                    <li class="nested"><img src="Assets/jobs.svg" alt="">Payment History</li>
                 </li>
                 <li><img src="Assets/users.svg" alt="">Freebies</li>
                 <li><img src="Assets/settings.svg" alt="">Configuration</li>
                 <li><img src="Assets/audit.svg" alt="">Audit Log  <img class="move-right" src="Assets/left-arrow.svg">
-                    <li id="nested"><img src="Assets/sms-log.svg" alt="">Sms Log</li>
-                    <li id="nested"><img src="Assets/email-log.svg" alt="">Email Log</li>
-                    <li id="nested"><img src="Assets/jobs.svg" alt="">System Log</li>
+                    <li class="nested"><img src="Assets/sms-log.svg" alt="">Sms Log</li>
+                    <li class="nested"><img src="Assets/email-log.svg" alt="">Email Log</li>
+                    <li class="nested"><img src="Assets/jobs.svg" alt="">System Log</li>
                 </li>
             </ul>
         </nav>
@@ -102,6 +104,9 @@
                         </th>
                         <th><input class="th-inp" type="button" value="Search"></th>
                         <th><input class="th-inp" type="button" value="Download" id="green"></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                     <tr class="top">
                        <th>Election Name</th>
@@ -151,7 +156,25 @@
                 </table>
             </section>
             <section>
-
+                <div class="page">
+                    <p class="page-p">Prev</p>
+                    <div class="page-tab">
+                        <p>1</p>
+                    </div>
+                    <div class="page-tab">
+                        <p>2</p>
+                    </div>
+                    <div class="page-tab">
+                        <p>3</p>
+                    </div>
+                    <div class="page-tab">
+                        <p>4</p>
+                    </div>
+                    <div class="page-tab">
+                        <p>5</p>
+                    </div>
+                    <p class="page-p" id="gree">Next</p>
+                </div>
             </section>
         </section>
     </section> 

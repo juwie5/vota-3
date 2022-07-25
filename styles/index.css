@@ -63,6 +63,11 @@ body{
     display: flex;
 }
 
+.second-li li a{
+    text-decoration: none;
+    color: #0C1825;
+}
+
 .second-li img{
     vertical-align: middle;
     margin-right: 15px;
@@ -73,10 +78,16 @@ body{
     background-color:  #F0F0F0;  
 }
 
-#nested{
-    margin-left: 15%; 
+.second-li .nested{
+    margin: 0 15%; 
     display: none;
 }
+
+#show{
+    display: block;
+}
+
+
 
 
 .content{
@@ -276,3 +287,52 @@ td{
     margin-left: 20px;
 }
 
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.page-p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8D8A99;
+    margin: 0 20px;
+}
+
+#gree{
+    color: #00AA37;  
+}
+
+.page-tab{
+    width: 64px;
+    height: 64px;
+    border: 1px solid #BCBCBC;
+    border-radius: 6px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BCBCBC;
+}
+
+.page-tab:nth-of-type(1){
+    color: #FFFFFF;
+    border: 1px solid #00AA37;
+    background-color: #00AA37;
+}
+
+.page-tab p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+@import url("organization.css");
