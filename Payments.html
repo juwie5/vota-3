@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/organization.css">
     <title>Vota-Dashboard</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
                 <li class="first-li"><img src="Assets/Vota Logo.svg" alt="">VOTA WEB</li>
             </div>
             <div class="second-li">    
-                <div class="selected"><img src="Assets/dashboard.svg" alt=""><a href="index.html">Dashboard</a></div>
+                <div><img src="Assets/dashboard.svg" alt=""><a href="index.html">Dashboard</a></div>
                 <div><img src="Assets/user.svg" alt=""><a href="Organization.html">Organisations</a></div>
                 <div><img src="Assets/packages.svg" alt=""><a href="Packages.html">Packages</a></div>
                 <div><img src="Assets/monitor.svg" alt=""><a href="Monitoring.html">Monitoring</a>
@@ -29,7 +29,7 @@
                     <div class="nested"><img src="Assets/monitoring.svg" alt="">Vote Monitoring</div>
                     <div class="nested"><img src="Assets/jobs.svg" alt="">Jobs</div>
                 </div> 
-                <div><img src="Assets/payment.svg" alt=""><a href="Payments.html">Payments</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown1()"></div>
+                <div class="selected"><img src="Assets/payment.svg" alt=""><a href="Payments.html">Payments</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown1()"></div>
                 <div class="hide" id="nest1">
                     <div class="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</div>
                     <div class="nested"><img src="Assets/jobs.svg" alt="">Payment History</div>
@@ -64,119 +64,54 @@
                     </div> 
                 </div>
             </section>
-            <section class="card-set">
-                <div class="card">
-                    <img src="Assets/org.svg" alt="">
-                    <h3>18</h3>
-                    <p>Organisations</p>
-                </div>
-                <div class="card">
-                    <img src="Assets/elect.svg" alt="">
-                    <h3>11</h3>
-                    <p>Elections</p>
-                </div>
-                <div class="card">
-                    <img src="Assets/vote.svg" alt="">
-                    <h3>96</h3>
-                    <p>Voters</p>
-                </div>
-                <div class="card">
-                    <img src="Assets/progress.svg" alt="">
-                    <h3>0</h3>
-                    <p>Elections in progress</p>
-                </div>
-                <div class="card">
-                    <img src="Assets/balance.svg" alt="">
-                    <h3>0</h3>
-                    <p>Upcoming Elections</p>
-                </div>
-                <div class="card">
-                    <img src="Assets/progress.svg" alt="">
-                    <h3>89</h3>
-                    <p>Votes Recorded</p>
-                </div>
-            </section>
             <section>
+                <div class="head">
+                    <h1>Organization</h1>
+                    <div class="sub-head">
+                        <img src="Assets/home.svg" alt="">
+                        <img src="Assets/left-arrow.svg" alt="">
+                        <p>Organisation</p>
+                    </div>
+                </div>
                 <table>
-                    <tr>
-                        <th class="tab-head">General Election Stats/Count</th>
-                        <th class="tab-input">
-                            <img class="inp-img" src="Assets/input-search.svg" alt="">
-                            <input type="text" name="" id="" placeholder="Search">
-                        </th>
-                        <th><input class="th-inp" type="button" value="Search"></th>
-                        <th><input class="th-inp" type="button" value="Download" id="green"></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr class="top">
-                       <th>Election Name</th>
-                       <th>Organisation</th>
-                       <th>Total Voters</th>
-                       <th>Voted</th>
-                       <th>Yet to Vote</th>
-                       <th>Today’s Voters</th>
-                       <th>Today’s Votes</th>
+                    <tr class="top" id="org-head">
+                       <th>Name</th>
+                       <th>Status</th>
+                       <th>Package</th>
+                       <th>Election</th>
+                       <th></th>
                     </tr>
                     <tr>
-                        <td>New Test</td>
-                        <td>Ajax Foundation</td>
-                        <td>5</td>
+                        <td>Chamsmobile</td>
+                        <td>ACTIVE</td>
+                        <td>FREE</td>
                         <td>1</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>Details</td>
                     </tr>
                     <tr>
-                        <td>Demo Election</td>
-                        <td>Seedorf Energy</td>
-                        <td>12</td>
+                        <td>eMasters</td>
+                        <td>ACTIVE</td>
+                        <td>PRO</td>
                         <td>2</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>Details</td>
                     </tr>
                     <tr>
-                        <td>New Test</td>
-                        <td>Ajax Foundation</td>
-                        <td>5</td>
+                        <td>Tesla</td>
+                        <td>ACTIVE</td>
+                        <td>FREE</td>
                         <td>1</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>Details</td>
                     </tr>
                     <tr>
-                        <td>Demo Election</td>
-                        <td>Seedorf Energy</td>
-                        <td>12</td>
+                        <td>Sparky</td>
+                        <td>ACTIVE</td>
+                        <td>PRO</td>
                         <td>2</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>Details</td>
                     </tr>
                 </table>
             </section>
             <section>
-                <div class="page">
-                    <p class="page-p">Prev</p>
-                    <div class="page-tab">
-                        <p>1</p>
-                    </div>
-                    <div class="page-tab">
-                        <p>2</p>
-                    </div>
-                    <div class="page-tab">
-                        <p>3</p>
-                    </div>
-                    <div class="page-tab">
-                        <p>4</p>
-                    </div>
-                    <div class="page-tab">
-                        <p>5</p>
-                    </div>
-                    <p class="page-p" id="gree">Next</p>
-                </div>
             </section>
         </section>
     </section> 

@@ -10,34 +10,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/organization.css">
     <title>Vota-Dashboard</title>
 </head>
 <body>
     <section class="contain">
         <nav class="nav">
-            <ul>
+            <div>
                 <li class="first-li"><img src="Assets/Vota Logo.svg" alt="">VOTA WEB</li>
-            </ul>
-            <ul class="second-li">    
-                <li><img src="Assets/dashboard.svg" alt=""><a href="index.html">Dashboard</a></li>
-                <li class="selected"><img src="Assets/user.svg" alt=""><a href="Organization.html">Organisations</a></li>
-                <li><img src="Assets/packages.svg" alt="">Packages</li>
-                <li><img src="Assets/monitor.svg" alt="">Monitoring <img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown()">
-                    <li id="nested"><img src="Assets/monitoring.svg" alt="">Vote Monitoring</li>
-                    <li id="nested"><img src="Assets/jobs.svg" alt="">Jobs</li>
-                </li>
-                <li><img src="Assets/payment.svg" alt="">Payments  <img class="move-right" src="Assets/left-arrow.svg">
-                    <li id="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</li>
-                    <li id="nested"><img src="Assets/jobs.svg" alt="">Payment History</li>
-                </li>
-                <li><img src="Assets/users.svg" alt="">Freebies</li>
-                <li><img src="Assets/settings.svg" alt="">Configuration</li>
-                <li><img src="Assets/audit.svg" alt="">Audit Log  <img class="move-right" src="Assets/left-arrow.svg">
-                    <li id="nested"><img src="Assets/sms-log.svg" alt="">Sms Log</li>
-                    <li id="nested"><img src="Assets/email-log.svg" alt="">Email Log</li>
-                    <li id="nested"><img src="Assets/jobs.svg" alt="">System Log</li>
-                </li>
-            </ul>
+            </div>
+            <div class="second-li">    
+                <div><img src="Assets/dashboard.svg" alt=""><a href="index.html">Dashboard</a></div>
+                <div class="selected"><img src="Assets/user.svg" alt=""><a href="Organization.html">Organisations</a></div>
+                <div><img src="Assets/packages.svg" alt=""><a href="Packages.html">Packages</a></div>
+                <div><img src="Assets/monitor.svg" alt=""><a href="Monitoring.html">Monitoring</a>
+                    <img id="monitor" class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown()"></div>
+                <div class="hide" id="nest">
+                    <div class="nested"><img src="Assets/monitoring.svg" alt="">Vote Monitoring</div>
+                    <div class="nested"><img src="Assets/jobs.svg" alt="">Jobs</div>
+                </div> 
+                <div><img src="Assets/payment.svg" alt=""><a href="Payments.html">Payments</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown1()"></div>
+                <div class="hide" id="nest1">
+                    <div class="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</div>
+                    <div class="nested"><img src="Assets/jobs.svg" alt="">Payment History</div>
+                </div> 
+                <div><img src="Assets/users.svg" alt=""><a href="Freebies.html">Freebies</a></div>
+                <div><img src="Assets/settings.svg" alt=""><a href="Configuration.html">Configuration</a></div>
+                <div><img src="Assets/audit.svg" alt=""><a href="Audit.html">Audit</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown2()"></div>
+                <div class="hide" id="nest2">
+                    <div class="nested"><img src="Assets/sms-log.svg" alt="">Sms Log</div>
+                    <div class="nested"><img src="Assets/email-log.svg" alt="">Email Log</div>
+                    <div class="nested"><img src="Assets/jobs.svg" alt="">System Log</div>
+                </div>
+            </div>
         </nav>
         <section class="content">
             <section class="top-nav">
@@ -60,47 +65,84 @@
                 </div>
             </section>
             <section>
+                <div class="head">
+                    <h1>Organization</h1>
+                    <div class="sub-head">
+                        <img src="Assets/home.svg" alt="">
+                        <img src="Assets/left-arrow.svg" alt="">
+                        <p>Organisation</p>
+                    </div>
+                </div>
                 <table>
-                    <tr class="top">
+                    <tr id="org-head">
                        <th>Name</th>
                        <th>Status</th>
                        <th>Package</th>
                        <th>Election</th>
                        <th></th>
-                       <th></th>
-                       <th></th>
                     </tr>
                     <tr>
-                        <td>New Test</td>
-                        <td>Ajax Foundation</td>
-                        <td>5</td>
+                        <td>Chamsmobile</td>
+                        <td>ACTIVE</td>
+                        <td class="cool-grey">FREE</td>
                         <td>1</td>
-                        <td>4</td>
+                        <td onclick="openModal()">Details</td>
                     </tr>
                     <tr>
-                        <td>Demo Election</td>
-                        <td>Seedorf Energy</td>
-                        <td>12</td>
+                        <td>eMasters</td>
+                        <td>ACTIVE</td>
+                        <td class="cool-grey">PRO</td>
                         <td>2</td>
-                        <td>10</td>
+                        <td>Details</td>
                     </tr>
                     <tr>
-                        <td>New Test</td>
-                        <td>Ajax Foundation</td>
-                        <td>5</td>
+                        <td>Tesla</td>
+                        <td>ACTIVE</td>
+                        <td class="cool-grey">FREE</td>
                         <td>1</td>
-                        <td>4</td>
+                        <td>Details</td>
                     </tr>
                     <tr>
-                        <td>Demo Election</td>
-                        <td>Seedorf Energy</td>
-                        <td>12</td>
+                        <td>Sparky</td>
+                        <td>ACTIVE</td>
+                        <td class="cool-grey">PRO</td>
                         <td>2</td>
-                        <td>10</td>
+                        <td>Details</td>
                     </tr>
                 </table>
             </section>
-            <section>
+            <section id="profile" class="profile-modal">
+                <div class="profile">
+                    <div class="pro-head">
+                        <h2>ORGANISATION INFORMATION</h2>
+                        <img src="Assets/x.svg" onclick="closeModal()">
+                    </div>
+                   <div class="pro-head">
+                        <img src="Assets/charmslogo.svg">
+                        <div class="pro-sub">
+                            <div class="sub">
+                                <div><h4>FULLNAME: </h4></div>
+                                 <div><p class="sub-span">Chams Mobile</p></div>
+                            </div>
+                            <div class="sub">
+                                <div><h4>EMAIL: </h4></div>
+                                 <div><p class="sub-span">info@chamsmobile.com</p></div>
+                            </div>
+                            <div class="sub">
+                                <div><h4>PHONE : </h4></div>
+                                 <div><p class="sub-span">0700-chamsmobile</p></div>
+                            </div>
+                            <div class="sub">
+                                <div><h4>ABOUT: </h4></div>
+                                 <div><p class="sub-span">Chamsmobile Limited has evolved into a digital products and services company.</br>
+                                    We are licensed by the Central Bank of Nigeria (CBN) to provide Mobile Money Operations and <br>
+                                    Agency Banking services Chamsmobile Limited has evolved into a digital products and services company.<br>
+                                    We are licensed by the Central Bank of Nigeria (CBN) to provide Mobile Money Operations and Agency Banking services </p></div>
+                            </div>
+                        </div>
+                   </div>
+                   <button class="pro-btn" onclick="closeModal()">Close</button>
+                </div>
             </section>
         </section>
     </section> 
