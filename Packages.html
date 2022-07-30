@@ -76,50 +76,73 @@
                         </div>
                     </div>
                     <div class="subhead-lite">
-                        <div>
-                            <input class="th-inp" type="button" value="Add New Package">
+                        <div class="place">
+                            <img class="subhead-img" src="Assets/add.svg">
+                            <input class="subhead-input" type="button" value="Add New Package">
                         </div>
                     </div>
                 </div>
                 <table>
                     <tr class="top" id="org-head">
                        <th>Name</th>
-                       <th>Status</th>
-                       <th>Package</th>
-                       <th>Election</th>t 
-                       <th></th>
+                       <th>Max. Election</th>
+                       <th>Max. Voters</th>
+                       <th>Max. Candidates</th>
+                       <th>Amount</th>
+                       <th>Actions</th>
                     </tr>
                     <tr>
-                        <td>Chamsmobile</td>
-                        <td>ACTIVE</td>
-                        <td>FREE</td>
+                        <td>FREE PACKAGE</td>
                         <td>1</td>
-                        <td>Details</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>0.00</td>
+                        <td><img src="Assets/edit.svg"></td>
                     </tr>
                     <tr>
-                        <td>eMasters</td>
-                        <td>ACTIVE</td>
                         <td>PRO</td>
-                        <td>2</td>
-                        <td>Details</td>
-                    </tr>
-                    <tr>
-                        <td>Tesla</td>
-                        <td>ACTIVE</td>
-                        <td>FREE</td>
-                        <td>1</td>
-                        <td>Details</td>
-                    </tr>
-                    <tr>
-                        <td>Sparky</td>
-                        <td>ACTIVE</td>
-                        <td>PRO</td>
-                        <td>2</td>
-                        <td>Details</td>
+                        <td>10</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>50,000.00</td>
+                        <td><img src="Assets/edit.svg"></td>
                     </tr>
                 </table>
             </section>
-            <section>
+            <section id="profile" class="profile-modal">
+                <div class="profile">
+                    <div class="pro-head">
+                        <h2>New Package</h2>
+                        <img src="Assets/x.svg" onclick="closeModal()">
+                    </div>
+                    <div>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="">
+                        </div>
+                        <div>
+                            <label for="max-election">Maximum Election</label>
+                            <input type="number" name="max-election" id="">
+                        </div>
+                        <div>
+                            <label for="max-voters">Maximum Voters</label>
+                            <input type="number" name="max-voters" id="">
+                        </div>
+                        <div>
+                            <label for="max-candidates">Maximum Candidates</label>
+                            <input type="number" name="max-candidates" id="">
+                        </div>
+                        <div>
+                            <label for="amount">Amount</label>
+                            <input type="text" name="amount" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <button>Save Changes</button>
+                        <button>Close</button>
+                    </div>
+
+                </div>   
             </section>
         </section>
     </section> 

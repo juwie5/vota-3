@@ -49,17 +49,34 @@
 }
 
 .sub-input{
+    width: 225px;
     padding: 10px 35px;
-    width: 271px;  
     border: 1px solid #D8D8D8;
-    border-radius: 8px; 
+    border-radius: 5px;
+    outline: none;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color:rgba(141, 138, 153, 0.5);
-    margin-right: 20px;
+    color: #D8D8D8;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.subhead-input{
+    width: 245px;
+    padding: 10px;
+    border: 1px solid #00AA37;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00AA37;
+    background-color: transparent; 
 }
 
 .place{
@@ -69,7 +86,13 @@
 .sub-img{
     position: absolute;
     top: 30%;
-    left: 2%;
+    left: 3%;
+}
+
+.subhead-img{
+    position: absolute;
+    top: 20%;
+    left: 3%;   
 }
 
 table{
@@ -127,7 +150,7 @@ tr:nth-child(even) {
     align-items: center;  
     flex-direction: column;
     z-index: 9;
-    display: none;
+    display: flex;
 }
 
 .profile{
@@ -179,11 +202,13 @@ tr:nth-child(even) {
    float: right;
    margin: 10px 20px 0;
 }
+
 .sub{
     display: inline-flex;
     align-items: baseline;
     width: 100%;   
 }
+
 .sub-span{
     font-style: normal;
     font-weight: 400;
