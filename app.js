@@ -33,3 +33,9 @@ function openModal(){
 function closeModal(){
   document.getElementById("profile").style.display = "none";
 }
+
+function showNot(){
+  document.getElementById("package").style.display = "none";
+  document.getElementById("nots").style.display = "flex";
+  setTimeout(closeModal, 3000)
+}

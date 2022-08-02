@@ -32,15 +32,15 @@
                 <div><img src="Assets/payment.svg" alt=""><a href="Payments.html">Payments</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown1()"></div>
                 <div class="hide" id="nest1">
                     <div class="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</div>
-                    <div class="nested"><img src="Assets/jobs.svg" alt="">Payment History</div>
+                    <div class="nested"><img src="Assets/jobs.svg" alt=""><a href="Payments-history.html">Payment History</a></div>
                 </div> 
                 <div><img src="Assets/users.svg" alt=""><a href="Freebies.html">Freebies</a></div>
                 <div><img src="Assets/settings.svg" alt=""><a href="Configuration.html">Configuration</a></div>
                 <div class="selected"><img src="Assets/audit.svg" alt=""><a href="Audit.html">Audit</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown2()"></div>
                 <div class="hide" id="nest2">
-                    <div class="nested"><img src="Assets/sms-log.svg" alt="">Sms Log</div>
-                    <div class="nested"><img src="Assets/email-log.svg" alt="">Email Log</div>
-                    <div class="nested"><img src="Assets/jobs.svg" alt="">System Log</div>
+                    <div class="nested"><img src="Assets/sms-log.svg" alt=""><a href="Audit.html">Sms Log</a></div>
+                    <div class="nested"><img src="Assets/email-log.svg" alt=""><a href="Email-Audit.html">Email Log</a></div>
+                    <div class="nested"><img src="Assets/jobs.svg" alt=""><a href="System-Audit.html">System Log</a></div>
                 </div>
             </div>
         </nav>
@@ -65,53 +65,112 @@
                 </div>
             </section>
             <section>
-                <div class="head">
-                    <h1>Organization</h1>
-                    <div class="sub-head">
-                        <img src="Assets/home.svg" alt="">
-                        <img src="Assets/left-arrow.svg" alt="">
-                        <p>Organisation</p>
+                <div class="head-spacer">
+                    <div class="head-lite">
+                        <h1 class="head-h1">SMS Log</h1>
+                        <div class="sub-head">
+                            <img src="Assets/home.svg" alt="">
+                            <img src="Assets/left-arrow.svg" alt="">
+                            <p>Audit Log</p>
+                        </div>
+                    </div>
+                    <div class="subhead-lite">
+                        <div class="place">
+                            <img class="sub-img" src="Assets/input-search.svg" alt="">
+                            <input class="sub-input" type="text" name="" id="" placeholder="Search">
+                        </div>
+                        <div>
+                            <input class="th-inp" type="button" value="Search">
+                            <input class="th-inp" id="green" type="button" value="Download">
+                        </div>
                     </div>
                 </div>
                 <table>
                     <tr class="top" id="org-head">
-                       <th>Name</th>
+                       <th>From</th>
+                       <th>Subject</th>
+                       <th>To</th>
+                       <th>Date & Time</th>
                        <th>Status</th>
-                       <th>Package</th>
-                       <th>Election</th>
-                       <th></th>
                     </tr>
                     <tr>
-                        <td>Chamsmobile</td>
-                        <td>ACTIVE</td>
-                        <td>FREE</td>
-                        <td>1</td>
-                        <td>Details</td>
+                        <td>Admin</td>
+                        <td>Election Notification</td>
+                        <td>Test Voters</td>
+                        <td>12/9/2022 12:16:25 PM</td>
+                        <td>Completed</td>
                     </tr>
                     <tr>
-                        <td>eMasters</td>
-                        <td>ACTIVE</td>
-                        <td>PRO</td>
-                        <td>2</td>
-                        <td>Details</td>
+                        <td>Admin</td>
+                        <td>Election Result</td>
+                        <td>Election Voters</td>
+                        <td>12/9/2022 12:16:25 PM</td>
+                        <td>Pending</td>
                     </tr>
                     <tr>
-                        <td>Tesla</td>
-                        <td>ACTIVE</td>
-                        <td>FREE</td>
-                        <td>1</td>
-                        <td>Details</td>
+                        <td>Wale</td>
+                        <td>Election Notification</td>
+                        <td>Election Voters</td>
+                        <td>12/9/2022 12:16:25 PM</td>
+                        <td>In Progress</td>
                     </tr>
                     <tr>
-                        <td>Sparky</td>
-                        <td>ACTIVE</td>
-                        <td>PRO</td>
-                        <td>2</td>
-                        <td>Details</td>
+                        <td>Psalm</td>
+                        <td>Election Link</td>
+                        <td>Election Voters</td>
+                        <td>12/9/2022 12:16:25 PM</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel</td>
+                        <td>Election Result</td>
+                        <td>Election Voters</td>
+                        <td>12/9/2022 12:16:25 PM</td>
+                        <td>Failed</td>
+                    </tr>
+                    <tr>
+                        <td>Taiwo</td>
+                        <td>Election Notification</td>
+                        <td>Election Voters</td>
+                        <td>12/9/2022 12:16:25 PM</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Sandra</td>
+                        <td>Election Result</td>
+                        <td>Election Voters</td>
+                        <td>12/9/2022 12:16:25 PM</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Admin</td>
+                        <td>Election Result</td>
+                        <td>Election Voters</td>
+                        <td>12/9/2022 12:16:25 PM</td>
+                        <td>Pending</td>
                     </tr>
                 </table>
             </section>
             <section>
+                <div class="page">
+                    <p class="page-p">Prev</p>
+                    <div class="page-tab">
+                        <p>1</p>
+                    </div>
+                    <div class="page-tab">
+                        <p>2</p>
+                    </div>
+                    <div class="page-tab">
+                        <p>3</p>
+                    </div>
+                    <div class="page-tab">
+                        <p>4</p>
+                    </div>
+                    <div class="page-tab">
+                        <p>5</p>
+                    </div>
+                    <p class="page-p" id="gree">Next</p>
+                </div>
             </section>
         </section>
     </section> 

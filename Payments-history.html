@@ -35,9 +35,9 @@
                     <div class="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</div>
                     <div class="nested selected"><img src="Assets/jobs.svg" alt=""><a href="Payments-history.html">Payment History</a></div>
                 </div> 
-                <div class="selected"><img src="Assets/users.svg" alt=""><a href="Freebies.html">Freebies</a></div>
+                <div><img src="Assets/users.svg" alt=""><a href="Freebies.html">Freebies</a></div>
                 <div><img src="Assets/settings.svg" alt=""><a href="Configuration.html">Configuration</a></div>
-                <div><img src="Assets/audit.svg" alt=""><a href="Audit.html">Audit</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown2()"></div>
+                <div class="selected"><img src="Assets/audit.svg" alt=""><a href="Audit.html">Audit</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown2()"></div>
                 <div class="hide" id="nest2">
                     <div class="nested"><img src="Assets/sms-log.svg" alt=""><a href="Audit.html">Sms Log</a></div>
                     <div class="nested"><img src="Assets/email-log.svg" alt=""><a href="Email-Audit.html">Email Log</a></div>
@@ -68,41 +68,105 @@
             <section>
                 <div class="head-spacer">
                     <div class="head-lite">
-                        <h1 class="head-h1">Freebies</h1>
+                        <h1 class="head-h1">Payment</h1>
                         <div class="sub-head">
                             <img src="Assets/home.svg" alt="">
                             <img src="Assets/left-arrow.svg" alt="">
-                            <p>Freebies</p>
+                            <p>Payment History</p>
+                        </div>
+                    </div>
+                    <div class="subhead-lite">
+                        <div class="place">
+                            <img class="subhead-img" src="Assets/add.svg">
+                            <input id="sbhdinp" class="subhead-input" type="button" value="Add New Item">
                         </div>
                     </div>
                 </div>
+                <table>
+                    <tr class="top" id="org yu-head">
+                       <th>Organisation Name</th>
+                       <th>Payment Date</th>
+                       <th>Payment Time</th>
+                       <th>Amount Paid</th>
+                       <th>Status</th>
+                       <th>Transaction ID</th>
+                    </tr>
+                    <tr>
+                        <td>Chams</td>
+                        <td>10/02/2022</td>
+                        <td>04:05:00</td>
+                        <td>N50,000</td>
+                        <td>Successful</td>
+                        <td>AD45TH1200</td>
+                    </tr>
+                    <tr>
+                        <td>NNPC</td>
+                        <td>25/04/2022</td>
+                        <td>04:05:00</td>
+                        <td>N50,000</td>
+                        <td>Failed</td>
+                        <td>AD45TH1200</td> 
+                    </tr>
+                    <tr>
+                        <td>Swift Oil</td>
+                        <td>10/02/2022</td>
+                        <td>04:05:00</td>
+                        <td>N50,000</td>
+                        <td>Successful</td>
+                        <td>AD45TH1200</td>
+                    </tr>
+                    <tr>
+                        <td>Vodacom</td>
+                        <td>10/02/2022</td>
+                        <td>04:05:00</td>
+                        <td>N50,000</td>
+                        <td>Failed</td>
+                        <td>AD45TH1200</td>
+                    </tr>
+                    <tr>
+                        <td>Splash Mobile</td>
+                        <td>10/02/2022</td>
+                        <td>04:05:00</td>
+                        <td>N50,000</td>
+                        <td>Successful</td>
+                        <td>AD45TH1200</td>
+                    </tr>
+                    
+                </table>
             </section>
-            <section>
-                <div class="free">
-                    <div class="free-grid">
-                        <div class="pack-inp">
-                            <label  class="pack-label" for="amount">Free Election</label>
-                            <input  class="pack-input" type="text" name="amount" id="" placeholder="1">
-                        </div>
-                        <div class="pack-inp">
-                            <label  class="pack-label" for="amount">Free Voters</label>
-                            <input  class="pack-input" type="text" name="amount" id="" placeholder="25">
-                        </div>
-                        <div class="pack-inp">
-                            <label  class="pack-label" for="amount">Free SMS</label>
-                            <input  class="pack-input" type="text" name="amount" id="" placeholder="25">
-                        </div>
-                        <div class="pack-inp">
-                            <label  class="pack-label" for="amount">Free Whatsapp</label>
-                            <input  class="pack-input" type="text" name="amount" id="" placeholder="25">
-                        </div>
+            <section id="profile" class="profile-modal">
+                <div class="package-profile" id="package">
+                    <div class="pack-head">
+                        <h2>New Item</h2>
+                        <img src="Assets/x.svg" onclick="closeModal()">
                     </div>
-                    <div>
-                        <div class="pack-btngrp">
-                            <button class="pack-btn">Save Changes</button>
+                    <div class="pack-grp">
+                        <div class="pack-inp">
+                            <label class="pack-label" for="name">Name</label>
+                            <input class="pack-input" type="text" name="name" id="" placeholder="Name of Item">
                         </div>
+                        <div class="pack-inp">
+                            <label class="pack-label" for="max-election">Description</label>
+                            <input  class="pack-input" type="number" name="max-election" id="" placeholder="Unit Based">
+                        </div>
+                        <div class="pack-inp">
+                            <label  class="pack-label" for="amount">Amount</label>
+                            <input  class="pack-input" type="text" name="amount" id="" placeholder="Amount of package">
+                        </div>
+                        <div class="pack-inp">
+                            <label  class="pack-label" for="max-voters">Payment Type</label>
+                            <input class="pack-input"  type="text" name="max-voters" id="" placeholder="Unit Based">
+                        </div>     
                     </div>
-                </div>
+                    <div class="pack-btngrp">
+                        <button class="pack-btn" onclick="showNot()">Save Changes</button>
+                        <button class="pack-btn" id="close" onclick="closeModal()">Close</button>
+                    </div>
+                </div> 
+                <div class="pack-not" id="nots">
+                    <h2>Item Added</h2>
+                    <img class="img-gif" src="Assets/success.gif" alt="">
+                </div>  
             </section>
         </section>
     </section> 

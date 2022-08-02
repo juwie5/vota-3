@@ -1,0 +1,133 @@
+.package-profile{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 500px; 
+    padding: 20px; 
+}
+
+.pack-head{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 18px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.pack-grp{
+    margin-top: 30px;
+}
+
+.pack-inp{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+.pack-btngrp{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+
+.pack-input{
+    height: 56px;
+    background: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.pack-label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #777483;
+}
+
+.pack-btn{
+    width: 180px;
+    height: 46px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;   
+    background-color: #00AA37;
+    border-radius: 8px;
+    border: none;
+}
+
+#close{
+    color: #636363;
+    background-color: transparent;
+    border: 2px solid #636363;
+}
+
+.pack-not{
+    background-color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    display: none;
+}
+
+.pack-not h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 38px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.img-gif{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.free{
+    background-color: #FFFFFF;
+    padding: 5% 3%;
+    border-radius: 15px;
+    width: 97%;
+}
+
+.free-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+}
+
+#config{
+    grid-template-columns: auto;
+    width: 50%;
+}
+
+td{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+
+}

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/organization.css">
+    <link rel="stylesheet" href="styles/packages.css">
     <title>Vota-Dashboard</title>
 </head>
 <body>
@@ -32,15 +33,15 @@
                 <div><img src="Assets/payment.svg" alt=""><a href="Payments.html">Payments</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown1()"></div>
                 <div class="hide" id="nest1">
                     <div class="nested"><img src="Assets/monitoring.svg" alt="">Payment Item</div>
-                    <div class="nested"><img src="Assets/jobs.svg" alt="">Payment History</div>
+                    <div class="nested selected"><img src="Assets/jobs.svg" alt=""><a href="Payments-history.html">Payment History</a></div>
                 </div> 
                 <div><img src="Assets/users.svg" alt=""><a href="Freebies.html">Freebies</a></div>
                 <div class="selected"><img src="Assets/settings.svg" alt=""><a href="Configuration.html">Configuration</a></div>
                 <div><img src="Assets/audit.svg" alt=""><a href="Audit.html">Audit</a><img class="move-right" src="Assets/left-arrow.svg" onclick="showDropdown2()"></div>
                 <div class="hide" id="nest2">
-                    <div class="nested"><img src="Assets/sms-log.svg" alt="">Sms Log</div>
-                    <div class="nested"><img src="Assets/email-log.svg" alt="">Email Log</div>
-                    <div class="nested"><img src="Assets/jobs.svg" alt="">System Log</div>
+                    <div class="nested"><img src="Assets/sms-log.svg" alt=""><a href="Audit.html">Sms Log</a></div>
+                    <div class="nested"><img src="Assets/email-log.svg" alt=""><a href="Email-Audit.html">Email Log</a></div>
+                    <div class="nested"><img src="Assets/jobs.svg" alt=""><a href="Sms-Audit.html">System Log</a></div>
                 </div>
             </div>
         </nav>
@@ -65,53 +66,39 @@
                 </div>
             </section>
             <section>
-                <div class="head">
-                    <h1>Organization</h1>
-                    <div class="sub-head">
-                        <img src="Assets/home.svg" alt="">
-                        <img src="Assets/left-arrow.svg" alt="">
-                        <p>Organisation</p>
+                <div class="head-spacer">
+                    <div class="head-lite">
+                        <h1 class="head-h1">Configuration</h1>
+                        <div class="sub-head">
+                            <img src="Assets/home.svg" alt="">
+                            <img src="Assets/left-arrow.svg" alt="">
+                            <p>Configuration</p>
+                        </div>
                     </div>
                 </div>
-                <table>
-                    <tr class="top" id="org-head">
-                       <th>Name</th>
-                       <th>Status</th>
-                       <th>Package</th>
-                       <th>Election</th>
-                       <th></th>
-                    </tr>
-                    <tr>
-                        <td>Chamsmobile</td>
-                        <td>ACTIVE</td>
-                        <td>FREE</td>
-                        <td>1</td>
-                        <td>Details</td>
-                    </tr>
-                    <tr>
-                        <td>eMasters</td>
-                        <td>ACTIVE</td>
-                        <td>PRO</td>
-                        <td>2</td>
-                        <td>Details</td>
-                    </tr>
-                    <tr>
-                        <td>Tesla</td>
-                        <td>ACTIVE</td>
-                        <td>FREE</td>
-                        <td>1</td>
-                        <td>Details</td>
-                    </tr>
-                    <tr>
-                        <td>Sparky</td>
-                        <td>ACTIVE</td>
-                        <td>PRO</td>
-                        <td>2</td>
-                        <td>Details</td>
-                    </tr>
-                </table>
             </section>
             <section>
+                <div class="free">
+                    <div class="free-grid" id="config">
+                        <div class="pack-inp">
+                            <label  class="pack-label" for="amount">Email Provider</label>
+                            <select class="pack-input" name="amount" id="">
+                                <option value="Elastic Email">Elastic Email</option>
+                            </select>
+                        </div>
+                        <div class="pack-inp">
+                            <label  class="pack-label" for="amount">Sms Provider</label>
+                            <select class="pack-input" name="amount" id="">
+                                <option value="Twilio">Twilio</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pack-btngrp">
+                            <button class="pack-btn">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
     </section> 

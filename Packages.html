@@ -78,12 +78,12 @@
                     <div class="subhead-lite">
                         <div class="place">
                             <img class="subhead-img" src="Assets/add.svg">
-                            <input class="subhead-input" type="button" value="Add New Package">
+                            <input class="subhead-input" type="button" value="Add New Package" onclick="openModal()">
                         </div>
                     </div>
                 </div>
                 <table>
-                    <tr class="top" id="org-head">
+                    <tr class="top" id="org yu-head">
                        <th>Name</th>
                        <th>Max. Election</th>
                        <th>Max. Voters</th>
@@ -110,39 +110,42 @@
                 </table>
             </section>
             <section id="profile" class="profile-modal">
-                <div class="profile">
-                    <div class="pro-head">
+                <div class="package-profile" id="package">
+                    <div class="pack-head">
                         <h2>New Package</h2>
                         <img src="Assets/x.svg" onclick="closeModal()">
                     </div>
-                    <div>
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="">
+                    <div class="pack-grp">
+                        <div class="pack-inp">
+                            <label class="pack-label" for="name">Name</label>
+                            <input class="pack-input" type="text" name="name" id="" placeholder="Name of Package">
                         </div>
-                        <div>
-                            <label for="max-election">Maximum Election</label>
-                            <input type="number" name="max-election" id="">
+                        <div class="pack-inp">
+                            <label class="pack-label" for="max-election">Maximum Election</label>
+                            <input  class="pack-input" type="number" name="max-election" id="" placeholder="1">
                         </div>
-                        <div>
-                            <label for="max-voters">Maximum Voters</label>
-                            <input type="number" name="max-voters" id="">
+                        <div class="pack-inp">
+                            <label  class="pack-label" for="max-voters">Maximum Voters</label>
+                            <input class="pack-input"  type="number" name="max-voters" id="" placeholder="1">
                         </div>
-                        <div>
-                            <label for="max-candidates">Maximum Candidates</label>
-                            <input type="number" name="max-candidates" id="">
+                        <div class="pack-inp">
+                            <label  class="pack-label"for="max-candidates">Maximum Candidates</label>
+                            <input  class="pack-input" type="number" name="max-candidates" id="" placeholder="1">
                         </div>
-                        <div>
-                            <label for="amount">Amount</label>
-                            <input type="text" name="amount" id="">
+                        <div class="pack-inp">
+                            <label  class="pack-label" for="amount">Amount</label>
+                            <input  class="pack-input" type="text" name="amount" id="" placeholder="Amount of package">
                         </div>
                     </div>
-                    <div>
-                        <button>Save Changes</button>
-                        <button>Close</button>
+                    <div class="pack-btngrp">
+                        <button class="pack-btn" onclick="showNot()">Save Changes</button>
+                        <button class="pack-btn" id="close" onclick="closeModal()">Close</button>
                     </div>
-
-                </div>   
+                </div> 
+                <div class="pack-not" id="nots">
+                    <h2>Packaged Added</h2>
+                    <img class="img-gif" src="Assets/success.gif" alt="">
+                </div>  
             </section>
         </section>
     </section> 
